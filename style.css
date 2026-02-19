@@ -1,0 +1,323 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.main1{
+    background: linear-gradient(rgba(0,0,0,0.7)),url(./Images/backgroyund1.jpg) center/cover no-repeat;
+    height: 100vh;
+    
+}
+.main1-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    img{
+        height: 5rem;
+    }
+    div{
+        padding: 0px 10rem;
+    }
+    button{
+        color: white;
+        background-color: red;
+        height: 2rem;
+        width: 5rem;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 14px;
+    }
+    select{
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        height: 2rem;
+        width: 7rem;
+        text-align: center;
+        border-radius: 5px;
+        margin-right: 1rem;
+        font-weight: 700;
+        font-size: 14px
+
+       
+    }
+     select:focus{
+            border: 4px white double;
+        }
+
+}
+.main1-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: auto;
+    .main1-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+         h1{
+           font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+           padding: 10rem 50px 0px ;
+           font-weight: 700;
+           font-size: 4rem;
+           width: 50vw;
+            
+         }
+         h3{
+            font-size: 1.3rem;
+            padding: 1rem;
+             font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+         }
+         .membership{
+            font-size: 1rem;
+            padding-top: 1rem;
+            
+         }
+       
+    }
+    .main1-input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding-top: 1rem;
+
+
+        input[type="email"]{
+            background-color: rgba(0, 0, 0, 0.5);
+            border-style: solid;
+            height: 3.5rem;
+            width: 23rem;
+            color: white;
+            text-indent:10px ;
+            
+
+        }
+        input[type="email"]::placeholder{
+            text-indent: 10px;
+            color: rgb(209, 205, 205);
+            font-size: 1rem;
+            
+        }
+        input[type="email"]:focus{
+            border: 3px white double ;
+            
+        }
+        .btn{
+            background-color: red;
+            color: white;
+            height: 3.5rem;
+            width: 13rem;
+            border-radius: 5px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(230, 10, 10);
+        }
+    }
+}
+
+.line{
+    margin-top: 12rem;
+    height: 6px;
+    width: auto;
+    background-color: red;
+    border-radius: 50% 50% 0 0;
+    box-shadow: 0 0 50px #0306a9;
+}
+
+.trending{
+    background-color: black;
+    h3{
+        color: white;
+        padding: 1rem 9rem;
+        font-size: 1.5rem;
+    }
+
+}
+.top-10{
+    display: flex;
+    gap: 10px;
+    overflow-x:auto;     /*enables horizontal scrolling*/
+    scroll-behavior:smooth; /* smooth scroll effect */
+    padding: 10px;
+    color: white;
+    width: 80vw;
+    margin: auto;
+     gap: 2.5rem;
+    
+    h1{
+        
+        display: inline-block;
+        font-size: 7rem;
+        margin-top: -5rem;
+        color: black;
+      -webkit-text-stroke: 3px white;
+      z-index: 1;
+      position: relative;
+     
+    }
+    img{
+        height: 16rem;
+        border-radius: 5px;
+    }
+    div:hover{
+        transform: scale(1.1); /* transition effect above */
+        transition: 0.3s;   /*smooth transition*/
+        cursor: pointer;
+        border-radius: 10px;
+        
+    }
+}
+.join{
+    h3{
+        color: white;
+        padding: 3rem 9rem 1rem;
+        font-size: 1.5rem;
+    }
+}
+.join-inner{
+    display: flex;
+    width: 80vw;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin: auto;
+
+    div{
+        background: linear-gradient(135deg, #0d0127 50%, #420242);
+        border-radius: 10px;
+        width: 25%;
+             
+        h2{
+            padding: 1rem 10px;
+        }
+        p{
+            color: rgb(191, 188, 188);
+             padding: 1rem 10px;
+        }
+        img{
+            height: 4rem;
+            width: 4rem;
+            margin-top: 5rem;
+            margin-left: 13rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+.question{
+    h3{
+        color: white;
+        padding: 3rem 9rem 1rem;
+        font-size: 1.5rem;
+        
+    }
+    details{
+        width: 80vw;
+        min-height: 5rem;
+        background-color: rgb(50, 50, 50);
+        /* align-items: center; */
+        /* justify-content: space-around; */
+        margin: auto;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        
+        
+    }
+    summary{
+        font-size: 1.5rem;
+        text-indent: 1rem;
+        padding-top: 1.5rem;
+        list-style: none;
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+        position: relative;
+        
+        
+    }
+    summary::after {
+    content: "+";
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    right: 10px;
+    
+    }
+    details[open] summary::after {
+    content: "×";
+
+    /* another logic */
+    /* content: "+";
+    transform: rotate(45deg); */
+    }
+    details:hover{
+        background-color: rgb(91, 90, 90);
+        transition: 0.3s;
+    }
+    p{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        text-indent: 1rem;
+        text-align:start;
+
+    }
+
+}
+.foot-content{
+    margin-top: 4rem;
+}
+.no{
+    margin: 4rem 9rem;
+    color: rgb(174, 171, 171);
+
+    span{
+        text-decoration: underline;
+    }
+
+}
+.links{
+    display: flex;
+    
+    justify-content: space-evenly;
+    width: 80vw;
+
+    a{
+        color: rgb(174, 171, 171);
+        font-size: 15px;
+
+    }
+    a:active{
+        color: #e50914;
+    }
+}
+.foot-lang{
+     margin: 3rem 9rem;
+}
+.netflix-india{
+    color: rgb(174, 171, 171);
+    margin: 3rem 9rem;
+    
+}
+.reCAPTCHA{
+     margin: 3rem 9rem;
+     font-size: small;
+     color: rgb(137, 133, 133);
+     a{
+        color: #0c75f5;
+     }
+}
+
